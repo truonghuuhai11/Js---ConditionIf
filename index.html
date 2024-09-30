@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cấu trúc rẽ nhánh if</title>
+</head>
+
+<body>
+    <h1>Tính toán với nguyên,n,tháng,phương trình bặc 2,tam giác</h1>
+
+    <!-- Kiểm tra số nguyên dương hay âm -->
+    <h2>Kiểm tra số nguyên dương hay âm</h2>
+    <label for="num1">Nhập số nguyên: </label>
+    <input type="number" id="num1">
+    <button onclick="kiemTraSo()">Kiểm tra</button>
+    <p id="result1"></p>
+
+    <!-- Kiểm tra số chia hết cho 3 hoặc 5 -->
+    <h2>Kiểm tra số chia hết cho 3 hay 5</h2>
+    <label for="num2">Nhập số nguyên: </label>
+    <input type="number" id="num2">
+    <button onclick="kiemTraChia()">Kiểm tra</button>
+    <p id="result2"></p>
+
+    <!-- Tính số ngày trong tháng -->
+    <h2>Kiểm tra số ngày của tháng</h2>
+    <label for="month">Nhập tháng (1-12): </label>
+    <input type="number" id="month" min="1" max="12">
+    <button onclick="kiemTraThang()">Kiểm tra</button>
+    <p id="result3"></p>
+
+    <!-- Giải phương trình bậc 2 -->
+    <h2>Giải phương trình bậc 2</h2>
+    <h3>Phương trình bậc 2 có dạng: ax2+bx+c=0.</h3>
+    <label for="heSoA">Nhập hệ số a: </label>
+    <input type="number" id="heSoA">
+    <label for="heSoB">Nhập hệ số b: </label>
+    <input type="number" id="heSoB">
+    <label for="heSoC">Nhập hệ số c: </label>
+    <input type="number" id="heSoC">
+    <button onclick="giaiPhuongTrinhBac2()">Giải</button>
+    <p id="resultPhuongTrinhBac2"></p>
+
+    <!-- Kiểm tra 3 cạnh có phải tam giác -->
+    <h2>Kiểm tra 3 cạnh có phải tam giác</h2>
+    <label for="canhA">Nhập số a: </label>
+    <input type="number" id="canhA">
+    <label for="canhB">Nhập số b: </label>
+    <input type="number" id="canhB">
+    <label for="canhC">Nhập số c: </label>
+    <input type="number" id="canhC">
+    <button onclick="kiemTraTamGiac()">Kiểm tra</button>
+    <p id="resultTamGiac"></p>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
